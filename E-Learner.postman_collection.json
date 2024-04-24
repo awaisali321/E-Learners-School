@@ -1,0 +1,2142 @@
+{
+	"info": {
+		"_postman_id": "5b44e339-da7c-435f-8368-59047297b31b",
+		"name": "E-Learner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12496599"
+	},
+	"item": [
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "Std-Dashboard",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/dashboard",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "MwMwMgMQMQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"date_to\":\"2023-07-31\",\"student_id\":\"218\",\"role\":\"student\",\"date_from\":\"2023-07-01\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/dashboard",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"dashboard"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "take url",
+					"item": [
+						{
+							"name": "https://school.daigiboy.com/app",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://school.daigiboy.com/app",
+									"protocol": "https",
+									"host": [
+										"school",
+										"daigiboy",
+										"com"
+									],
+									"path": [
+										"app"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "{{base-url}}auth/login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"deviceToken\":\"cpVQ6tFcFCo:APA91bHd_KyDod0tR8AQ-irphJBANd1QUpm6nc9Nm3UY4BqVGugJ37jWW7Az-UV82is7e1DKlecPb8dbbFjz8g1m_WPtUxBNvT5RXPoR5OPfKOX9_VUUpYhSQXsr18dGYXTd2LBzErYj\",\"password\":\"1234\",\"username\":\"std1\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}auth/login",
+									"host": [
+										"{{base-url}}auth"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "download others",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getDownloadsLinks",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"tag\":\"Other Download\",\"sectionId\":\"13\",\"classId\":\"18\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getDownloadsLinks",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getDownloadsLinks"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Download syllabus",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getDownloadsLinks",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"tag\":\"Syllabus\",\"sectionId\":\"13\",\"classId\":\"18\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getDownloadsLinks",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getDownloadsLinks"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "download study material",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getDownloadsLinks",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"tag\":\"Study Material\",\"sectionId\":\"13\",\"classId\":\"18\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getDownloadsLinks",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getDownloadsLinks"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "download assignments",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getDownloadsLinks",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"tag\":\"Assignments\",\"sectionId\":\"13\",\"classId\":\"18\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getDownloadsLinks",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getDownloadsLinks"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "home",
+					"item": []
+				},
+				{
+					"name": "profile",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getStudentProfile",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getStudentProfile",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getStudentProfile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "fees",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/fees",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/fees",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"fees"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "time_table",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/class_schedule",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/class_schedule",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"class_schedule"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "lesson plan",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getlessonplan",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"date_to\":\"2023-07-23\",\"student_id\":\"218\",\"date_from\":\"2023-07-17\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getlessonplan",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getlessonplan"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "syllabus status",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getsyllabussubjects",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"site_url\":\"https:\\/\\/school.daigiboy.com\\/\",\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getsyllabussubjects",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getsyllabussubjects"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "home work",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getHomework",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getHomework",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getHomework"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "online exam",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getOnlineExam",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getOnlineExam",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getOnlineExam"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "apply leave",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getApplyLeave",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getApplyLeave",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getApplyLeave"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/logout",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NwMgMQMwNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"deviceToken\":\"cpVQ6tFcFCo:APA91bHd_KyDod0tR8AQ-irphJBANd1QUpm6nc9Nm3UY4BqVGugJ37jWW7Az-UV82is7e1DKlecPb8dbbFjz8g1m_WPtUxBNvT5RXPoR5OPfKOX9_VUUpYhSQXsr18dGYXTd2LBzErYj\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/logout",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "attendance",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getAttendenceRecords",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"date\":\"2023-07-20\",\"year\":\"2023\",\"student_id\":\"218\",\"month\":\"7\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getAttendenceRecords",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getAttendenceRecords"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "examination",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getExamList",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getExamList",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getExamList"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "notice board",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getNotifications",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{type=student}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getNotifications",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getNotifications"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Timeline",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getTimeline",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"studentId\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getTimeline",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getTimeline"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "My Documents",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getDocument",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"studentId\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getDocument",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getDocument"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Teachers Review",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getTeachersList",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"429\",\"section_id\":\"13\",\"class_id\":\"18\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getTeachersList",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getTeachersList"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Library",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getLibraryBookIssued",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"studentId\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getLibraryBookIssued",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getLibraryBookIssued"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Transport Route",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getTransportRoute",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getTransportRoute",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getTransportRoute"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Hostels",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getHostelList",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}webservice/getHostelList",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getHostelList"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "about School",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getSchoolDetails",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MTANgOQOAOA",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}webservice/getSchoolDetails",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getSchoolDetails"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "module",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getModuleStatus",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NwMgMQMwNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user\":\"student\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getModuleStatus",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getModuleStatus"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "child list",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/Parent_GetStudentsList",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MwOAMQNANQ",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "430",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"site_url\":\"https:\\/\\/school.daigiboy.com\\/\",\"user\":\"parent\",\"parent_id\":\"430\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/Parent_GetStudentsList",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"Parent_GetStudentsList"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getTask",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getTask",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MwOAMQNANQ",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "430",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"430\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getTask",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getTask"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "createTask",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/addTask",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MwOAMQNANQ",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "430",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"430\",\"date\":\"2023-7-22\",\"event_title\":\"test\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/addTask",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"addTask"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update task",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/updateTask",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "MwOAMQNANQ",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "430",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"status\":\"yes\",\"task_id\":\"57\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/updateTask",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"updateTask"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "subject lessons",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getSubjectsLessons",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"subject_group_subject_id\":\"51\",\"subject_group_class_sections_id\":\"26\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getSubjectsLessons",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getSubjectsLessons"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "online exam result",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getOnlineExamResult",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"onlineexam_student_id\":\"323\",\"exam_id\":\"83\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getOnlineExamResult",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getOnlineExamResult"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "exam result",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getExamResult",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"exam_group_class_batch_exam_id\":\"3\",\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getExamResult",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getExamResult"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "exam schedule",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getExamSchedule",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"exam_group_class_batch_exam_id\":\"6\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getExamSchedule",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getExamSchedule"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "add leave",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/addleave",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/integ/Downloads/9978591_4332646.jpg"
+										},
+										{
+											"key": "to_date",
+											"value": "2023-07-25",
+											"type": "text"
+										},
+										{
+											"key": "apply_date",
+											"value": "2023-07-21",
+											"type": "text"
+										},
+										{
+											"key": "from_date",
+											"value": "2023-07-22",
+											"type": "text"
+										},
+										{
+											"key": "reason",
+											"value": "sickness",
+											"type": "text"
+										},
+										{
+											"key": "student_id",
+											"value": "218",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/addleave",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"addleave"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "upload doc",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/uploadDocument",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/integ/Downloads/9978591_4332646.jpg"
+										},
+										{
+											"key": "student_id",
+											"value": "218",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "test",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/uploadDocument",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"uploadDocument"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "view rating",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getTeacherSubject",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"section_id\":\"13\",\"staff_id\":\"18\",\"class_id\":\"18\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getTeacherSubject",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getTeacherSubject"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "add rating",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/addStaffRating",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user_id\":\"429\",\"section_id\":\"13\",\"staff_id\":\"15\",\"rate\":\"5.0\",\"class_id\":\"18\",\"role\":\"student\",\"comment\":\"test\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/addStaffRating",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"addStaffRating"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Library books",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getLibraryBooks",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base-url}}webservice/getLibraryBooks",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getLibraryBooks"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "hostel details",
+					"item": [
+						{
+							"name": "{{base-url}}webservice/getHostelDetails",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "NQOAMwMgNw",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Key",
+										"value": "schoolAdmin@",
+										"type": "text"
+									},
+									{
+										"key": "Client-Service",
+										"value": "smartschool",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "User-ID",
+										"value": "429",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"hostelId\":\"1\",\"student_id\":\"218\"}"
+								},
+								"url": {
+									"raw": "{{base-url}}webservice/getHostelDetails",
+									"host": [
+										"{{base-url}}webservice"
+									],
+									"path": [
+										"getHostelDetails"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

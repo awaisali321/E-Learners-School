@@ -1,0 +1,140 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AZTabBar (1.4.2):
+    - EasyNotificationBadge
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - Cosmos (23.0.0)
+  - DropDown (2.3.13)
+  - EasyNotificationBadge (1.2.5)
+  - FSCalendar (2.8.4)
+  - GoogleMaps (5.2.0):
+    - GoogleMaps/Maps (= 5.2.0)
+  - GoogleMaps/Base (5.2.0)
+  - GoogleMaps/Maps (5.2.0):
+    - GoogleMaps/Base
+  - GooglePlaces (7.1.0)
+  - Intercom (10.4.0)
+  - IQKeyboardManagerSwift (6.5.0)
+  - JGProgressHUD (2.2)
+  - Kingfisher/Core (5.15.8)
+  - Kingfisher/SwiftUI (5.15.8):
+    - Kingfisher/Core
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Presentr (1.9)
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - RappleProgressHUD (4.1)
+  - Result (4.1.0)
+  - SDWebImage (5.0.0):
+    - SDWebImage/Core (= 5.0.0)
+  - SDWebImage/Core (5.0.0)
+  - SideMenuController (0.2.4)
+  - SwiftAlgorithms (1.0.0)
+  - SwiftHSVColorPicker (1.1.1)
+  - SwiftLog (1.0.0)
+  - SwiftSignalRClient (0.9.0)
+  - SwiftyGif (5.4.4)
+  - SwiftyJSON (4.3.0)
+  - TagListView (1.4.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - AZTabBar
+  - Charts (= 4.1.0)
+  - Cosmos
+  - DropDown (= 2.3.13)
+  - FSCalendar (~> 2.8.4)
+  - GoogleMaps (= 5.2.0)
+  - GooglePlaces (= 7.1.0)
+  - Intercom (= 10.4.0)
+  - IQKeyboardManagerSwift (= 6.5.0)
+  - JGProgressHUD
+  - Kingfisher/SwiftUI
+  - Moya (~> 13.0)
+  - Presentr
+  - R.swift (= 6.1.0)
+  - RappleProgressHUD
+  - SDWebImage (= 5.0)
+  - SideMenuController
+  - SwiftHSVColorPicker
+  - SwiftLog
+  - SwiftSignalRClient (= 0.9.0)
+  - SwiftyGif
+  - SwiftyJSON
+  - TagListView (~> 1.0)
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AZTabBar
+    - Charts
+    - Cosmos
+    - DropDown
+    - EasyNotificationBadge
+    - FSCalendar
+    - GoogleMaps
+    - GooglePlaces
+    - Intercom
+    - IQKeyboardManagerSwift
+    - JGProgressHUD
+    - Kingfisher
+    - Moya
+    - Presentr
+    - R.swift
+    - R.swift.Library
+    - RappleProgressHUD
+    - Result
+    - SDWebImage
+    - SideMenuController
+    - SwiftAlgorithms
+    - SwiftHSVColorPicker
+    - SwiftLog
+    - SwiftSignalRClient
+    - SwiftyGif
+    - SwiftyJSON
+    - TagListView
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AZTabBar: e4d5a1f5f3fc7be044d532b7a704d303cff9af11
+  Charts: ce0768268078eee0336f122c3c4ca248e4e204c5
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  EasyNotificationBadge: a3ebbcb1de0c0558e102e954380c75801f352702
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  GoogleMaps: 025272d5876d3b32604e5c080dc25eaf68764693
+  GooglePlaces: 187946335ec3dc624de71c0a9ddcc712f19b0ee1
+  Intercom: fc68809088ec0b2452c441eae6f6466d5b906518
+  IQKeyboardManagerSwift: 6cd19976c6e871907c4ed9127c2d3affdd4defc2
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Presentr: 7078d7eb5d1661ebeaae60c9e42a1e534de1b993
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  RappleProgressHUD: f29bc5dc5f9834c2caa9c2ae21ba11f3ff2b5a85
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
+  SideMenuController: b463d2b3aa58e2afe57f57a07938fa9a647894ca
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+  SwiftHSVColorPicker: 69c9028dea168e0f8ee2439d31a899cf1df95678
+  SwiftLog: f6c4f9a4ade06263555ab34b2c0f72025ffcda9e
+  SwiftSignalRClient: aba134f3d30f7eeb01008929e387b6e66546c7d5
+  SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 2cb080a08b8abae1675e294ec11627e058fb50af
+
+COCOAPODS: 1.13.0
